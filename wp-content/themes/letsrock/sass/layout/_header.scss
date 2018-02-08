@@ -1,0 +1,30 @@
+header.site-header {
+    background-color: $mark-color;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main-background {
+    position: relative;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 3px;
+    background: #d3d3d3;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.progress-bar:before {
+    content: '';
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    height: 3px;
+    background: $mark-color;
+}

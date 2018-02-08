@@ -1,0 +1,42 @@
+.copyright {
+    color: $primary-color;
+    font-family: $desc-font;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+}
+
+p.copyright {
+    a {
+        color: $mark-color;
+        font-family: $mark-font;
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        display: inline;
+        text-transform: none;
+    }
+}
+
+#cantus-link {
+    color: $mark-color;
+    font-family: $mark-font;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    display: inline;
+    text-transform: none;
+
+    &:hover {
+        border-bottom-color: $mark-color;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+}
+
+footer {
+    border-top: 1px;
+    border-top-color: #d2d2d2;
+    border-top-style: solid;
+}

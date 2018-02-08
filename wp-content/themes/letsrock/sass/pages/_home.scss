@@ -1,0 +1,63 @@
+//styles for the popup
+.popup {
+    display: none;
+    overflow: hidden;
+}
+
+.popup.show {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+    z-index: 10;
+}
+
+.popup-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $secondary-color;
+    height: 300px;
+    width: 500px;
+    border: 2px solid $mark-color;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: $heading-font;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.popup.show h5 {
+    font-family: $mark-font;
+    font-size: 35px;
+    margin: 0;
+}
+
+.close-popup-link {
+    text-decoration: none;
+    color: $mark-color;
+    font-family: $social-number-font;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border: 2px solid $primary-color;
+    border-radius: 25px;
+    background-color: $secondary-color;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    text-align: center;
+
+    &:hover {
+        color: $secondary-color;
+        background-color: $mark-color;
+    }
+}

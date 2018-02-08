@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+section {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container-main {
+    width: 100%;
+    max-width: 1170px;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    padding: 90px 0 0 0;
+}
+

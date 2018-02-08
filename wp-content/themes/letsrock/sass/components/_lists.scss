@@ -1,0 +1,85 @@
+.instagram-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: row;
+    height: 369px;
+    margin-top: 20px;
+}
+
+.song-list {
+    margin: 0;
+    padding: 0;
+    list-style: inside decimal-leading-zero;
+    column-count: 3;
+}
+
+li.song-item {
+    min-width: 167px;
+    text-align: left;
+    padding-right: 10px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.members-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.member-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+li.member {
+    position: relative;
+    overflow: hidden;
+}
+
+.member-desc {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    background-color: $mark-color;
+    color: $secondary-color;
+
+    &:hover {
+    bottom: 0;
+  }
+}
+
+.member-desc a:hover {
+    display: block;
+    color: $secondary-color;
+    bottom: 0;
+    background-color: $mark-color;
+}
+
+.socials {
+    padding: 0 10px;
+}
+
+.socials-items {
+    display: flex;
+    align-items: center;
+}
+
+li.socials-popup {
+    padding: 0 20px;
+}
+
+.bottom-menu-items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.instagram-image-link:hover {
+    opacity: 0.5;
+}
+
+.slider li {
+    width: 100%;
+}
