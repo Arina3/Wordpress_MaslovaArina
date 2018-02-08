@@ -18,7 +18,8 @@ get_header(); ?>
 
             <?php if ($the_query->have_posts()) : while ($the_query->have_posts() ) :$the_query->the_post();?>
             <h2><a href="<?php the_permalink(); ?>" class="member-link" ><?php the_title(); ?></a></h2>
-            <h4 class="member-name"><?php the_field('name'); ?></h4>
+                <h4 class="member-name"><?php the_field('name'); ?></h4>
+                    <p class="member-genre"><?php the_field('position'); ?></p>
             <?php the_excerpt(); ?>
 
 
