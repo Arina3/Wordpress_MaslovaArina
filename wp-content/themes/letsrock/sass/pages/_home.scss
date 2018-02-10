@@ -61,3 +61,33 @@
         background-color: $mark-color;
     }
 }
+
+.consert-image {
+    position: relative;
+}
+
+.concert-date {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.date-number, .date-month {
+    color: #ffffff;
+    font-family: $heading-font;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 3.2px;
+    margin: 0;
+}
+
+.date-month {
+    font-size: 32px;
+}
+
+.date-number {
+    font-size: 45px;
+}
+
