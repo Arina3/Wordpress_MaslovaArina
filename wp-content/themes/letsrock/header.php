@@ -76,7 +76,32 @@
         </div>
 </header>
 <section class="main-background clearfix">
-    <?php echo do_shortcode('[metaslider id="267"]'); ?>
+    <?php
+    $args = array(
+        'post_type' => 'slider'
+    );
+
+    $the_slider = new WP_Query($args); ?>
+
+    <?php if ($the_slider->have_posts()) : ?>
+    <div class="flexslider">
+        <ul class="slides">
+
+            <?php while ($the_slider->have_posts()) : $the_slider->the_post(); ?>
+
+                <li class="slide">
+                    <?php if (get_field('slider')): ?>
+
+                        <img src="<?php the_field('slider'); ?>"/>
+
+                    <?php endif; ?>
+                </li>
+
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        </ul>
+    </div>
+    <?php endif; ?>
     <div class="container-background">
         <h1 class="main-heading"><?php echo get_theme_mod('header_heading'); ?>
             <span class="subheading">

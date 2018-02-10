@@ -26,8 +26,7 @@
         <?php echo get_theme_mod('footer_copy') ?>
     </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="js/main.js"></script>
+
 <?php wp_footer(); ?>
 
 </body>
