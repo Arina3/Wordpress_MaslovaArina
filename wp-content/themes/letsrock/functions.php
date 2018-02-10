@@ -212,7 +212,7 @@ function letsrock_customize_register($wp_customize)
         'priority' => 31,
     ));
     $wp_customize->add_setting('header_heading', array(
-        'default' => __('H1', 'lets_rock'),
+        'default' => __('Main heading', 'lets_rock'),
         'transport' => 'refresh',
     ));
     $wp_customize->add_setting('header_subheading', array(
@@ -443,6 +443,115 @@ function letsrock_customize_register($wp_customize)
         'settings' => 'close_popup_url',
         'type' => 'text',
     ));
+
+    /*members section*/
+    $wp_customize->add_section('members_section', array(
+        'title' => __('Members section', 'lets_rock'),
+        'priority' => 31,
+    ));
+    $wp_customize->add_setting('members_heading', array(
+        'default' => __('Introducing', 'lets_rock'),
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_setting('members_subheading', array(
+        'default' => __(' our members', 'lets_rock'),
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_setting('members_url', array(
+        'default' => __('url', 'lets_rock'),
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('members_heading', array(
+        'label' => __('Main heading of the members section', 'lets_rock'),
+        'section' => 'members_section',
+        'settings' => 'members_heading',
+        'type' => 'text',
+    ));
+    $wp_customize->add_control('members_subheading', array(
+        'label' => __('Main subheading of the members section', 'lets_rock'),
+        'section' => 'members_section',
+        'settings' => 'members_subheading',
+        'type' => 'text',
+    ));
+    $wp_customize->add_control('members_url', array(
+        'label' => __('Members url', 'lets_rock'),
+        'section' => 'members_section',
+        'settings' => 'members_url',
+        'type' => 'text',
+    ));
+
+    /*concerts section*/
+    $wp_customize->add_section('concerts_section', array(
+        'title' => __('Concerts section', 'lets_rock'),
+        'priority' => 31,
+    ));
+    $wp_customize->add_setting('concerts_heading', array(
+        'default' => __('UPCOMING', 'lets_rock'),
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_setting('concerts_subheading', array(
+        'default' => __('Concert', 'lets_rock'),
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_setting('concerts_url', array(
+        'default' => __('url', 'lets_rock'),
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('concerts_heading', array(
+        'label' => __('Main heading of the concerts section', 'lets_rock'),
+        'section' => 'concerts_section',
+        'settings' => 'concerts_heading',
+        'type' => 'text',
+    ));
+    $wp_customize->add_control('concerts_subheading', array(
+        'label' => __('Main subheading of the concerts section', 'lets_rock'),
+        'section' => 'concerts_section',
+        'settings' => 'concerts_subheading',
+        'type' => 'text',
+    ));
+    $wp_customize->add_control('concerts_url', array(
+        'label' => __('Concerts url', 'lets_rock'),
+        'section' => 'concerts_section',
+        'settings' => 'concerts_url',
+        'type' => 'text',
+    ));
+
+    /*videos section*/
+    $wp_customize->add_section('videos_section', array(
+        'title' => __('Videos section', 'lets_rock'),
+        'priority' => 31,
+    ));
+    $wp_customize->add_setting('videos_heading', array(
+        'default' => __('LATEST', 'lets_rock'),
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_setting('videos_subheading', array(
+        'default' => __('Video', 'lets_rock'),
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_setting('videos_url', array(
+        'default' => __('url', 'lets_rock'),
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control('videos_heading', array(
+        'label' => __('Main heading of the videos section', 'lets_rock'),
+        'section' => 'videos_section',
+        'settings' => 'videos_heading',
+        'type' => 'text',
+    ));
+    $wp_customize->add_control('videos_subheading', array(
+        'label' => __('Main subheading of the videos section', 'lets_rock'),
+        'section' => 'videos_section',
+        'settings' => 'videos_subheading',
+        'type' => 'text',
+    ));
+    $wp_customize->add_control('videos_url', array(
+        'label' => __('Videos url', 'lets_rock'),
+        'section' => 'videos_section',
+        'settings' => 'videos_url',
+        'type' => 'text',
+    ));
+
 }
 
 add_action( 'customize_register', 'letsrock_customize_register');
